@@ -21,3 +21,11 @@ tripper = multiple_with_prams(3)
 
 print(f"doubler : {doubler(10)}")  # 20
 print(f"tripper : {tripper(10)}")  # 30
+
+# Using a lambda function with map
+squares = map(lambda x: x * x, [1, 2, 3, 4])
+print(list(squares))  # Outputs [1, 4, 9, 16]
+
+# Using a lambda function with filter
+evens = filter(lambda x: x % 2 == 0, [1, 2, 3, 4, 5])
+print(list(evens))  # Outputs [2, 4]
